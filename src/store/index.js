@@ -21,10 +21,11 @@ export default new Vuex.Store({
   },
   // 可以做异步请求
   actions: {
-    getList (Store) {
+    getList (Store, type) {
       // 请求豆瓣数据
       // jsonp(url,opt(可选),callback)
-      jsonp('http://api.douban.com/v2/movie/in_theaters?apikey=0df993c66c0c636e29ecbb5344252a4a', function (err, data) {
+      // 将这个请求变成活的
+      jsonp(`http://api.douban.com/v2/movie/${type}?apikey=0df993c66c0c636e29ecbb5344252a4a`, function (err, data) {
         if (err) return false // 如果err存在表示出问题了 出篓子了不能继续
         console.log(data)
         // 如果你action中的数据想要改state 必须通过mutations
