@@ -14,7 +14,7 @@ const routes = [
     component: () => import('@/views/hot')
   },
   {
-    path: '/detail', // 豆瓣影片详情
+    path: '/detail/:id', // 豆瓣影片详情
     component: () => import('@/views/detail')
   },
   {
