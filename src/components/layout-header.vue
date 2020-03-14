@@ -1,6 +1,7 @@
 <template>
   <div class="my-header">
-        <span>电影列表</span>
+    <!-- 直接获取共享状态中的数据 -->
+        <span>{{$store.state.title}}</span>
       </div>
 </template>
 
