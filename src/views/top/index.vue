@@ -1,7 +1,5 @@
 <template>
-  <div>
-      Top250
-  </div>
+  <movie-list />
 </template>
 
 <script>

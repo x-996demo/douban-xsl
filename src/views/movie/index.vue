@@ -1,7 +1,5 @@
 <template>
-  <div>
-      即将上映
-  </div>
+  <movie-list />
 </template>
 
 <script>

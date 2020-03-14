@@ -1,7 +1,5 @@
 <template>
-  <div>
-      详情
-  </div>
+  <movie-list />
 </template>
 
 <script>

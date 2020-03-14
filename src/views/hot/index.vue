@@ -1,7 +1,5 @@
 <template>
-  <div>
-      正在热映
-  </div>
+ <movie-list />
 </template>
 
 <script>
