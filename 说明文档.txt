@@ -1,0 +1,2 @@
+获取数据的方法为jsonp请求：
+所以需要使用jsonp插件：$  npm i jsonp -S
